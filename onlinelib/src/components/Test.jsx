@@ -17,7 +17,7 @@ export function Test(props) {
 
                     const bodyContent = books.map((book, index) => (
                         <div key={index} style={{ display: "flex", flexWrap: "wrap", justifyContent: "center",flexDirection:"column" }}>
-                            <img style={{ height: "240px", width: "200px", padding: "20px" }} src={book.image} alt={`Book ${index}`} />
+                            <img style={{ height: "240px", width: "200px", padding: "12px" }} src={book.image} alt={`Book ${index}`} />
                             {/*<p style={{fontSize:"18px"}}>{book.title}</p>*/}
                         </div>
                     ));
