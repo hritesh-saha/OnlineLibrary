@@ -172,7 +172,7 @@ app.post("/signup",
   
   })
 
-app.get("/home",async function(req,res){
+app.get("/",async function(req,res){
     const books=await tests.find({});
     res.send(
         {
