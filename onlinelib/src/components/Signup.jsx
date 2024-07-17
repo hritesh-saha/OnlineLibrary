@@ -32,7 +32,7 @@ export default function Signup() {
     e.preventDefault();
   
     try {
-      const response = await axios.post("http://localhost:3001/signup", {
+      const response = await axios.post("https://online-library-backend-gilt.vercel.app/signup", {
         username: user.username,
         email: user.email,
         password: user.password,

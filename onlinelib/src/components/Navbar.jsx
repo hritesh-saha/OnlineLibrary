@@ -1,6 +1,6 @@
 import logo from "./icon.png";
 import { Link, json } from "react-router-dom";
-import {FaSearch} from "react-icons/fa";
+//import {FaSearch} from "react-icons/fa";
 import { useState } from "react";
 import './Navbar.css'
 
