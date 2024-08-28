@@ -1,8 +1,85 @@
-.link{
-    position: relative;
-    height: 25px;
-}
-.link::after{
+.navbar {
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 1rem;
+    color: #2a255a;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 30px;
+    width: auto;
+    padding-top: 0.6rem;
+    padding-left: 0.6rem;
+    cursor: pointer;
+  }
+  
+  .brand-name {
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  
+  .brand-name a {
+    color: #2a255a;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 19px;
+  }
+  
+  .burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #2a255a;
+    margin: 3px 0;
+    transition: 0.3s;
+  }
+  
+  .burger-menu .open {
+    background-color: #33006F;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links.active {
+    display: block;
+  }
+  
+  .link {
+    cursor: pointer;
+    margin-left: 1.75rem;
+    font-weight: 600;
+    font-size: 19px;
+  }
+  
+  .link a {
+    color: #2a255a;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 19px;
+  }
+  
+  .link::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -13,8 +90,36 @@
     background-color: #33006F;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-}
-.link:hover::after{
+  }
+  
+  .link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
-}
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgb(128, 128, 128);
+      position: absolute;
+      top: 50px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .link {
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+  

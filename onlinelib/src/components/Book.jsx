@@ -26,7 +26,7 @@ export function Book(props){
 
     return (
         <div style={{  color: "white", padding: "20px" }}>
-            <h2 style={{textAlign:"center",color:"white",textTransform:"uppercase",fontFamily:"monospace",fontSize:"32px",fontWeight:"900",maxHeight:"50px",fontFamily:"monospace",fontSize:"35px"}}>{props.subject} Books</h2>
+            <h2 style={{textAlign:"center",color:"white",textTransform:"uppercase",fontFamily:"monospace",fontWeight:"900",maxHeight:"50px",fontSize:"35px"}}>{props.subject} Books</h2>
             <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
                 {body}
             </div>
